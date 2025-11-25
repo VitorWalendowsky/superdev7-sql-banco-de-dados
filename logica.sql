@@ -182,7 +182,40 @@ select minute ('2020-12-31 22:59:01')
 --consultar segundo
 select second ('2020-12-31 22:59:01')
 
+-- consultar alunos de 70 ate 90
+select nome, data_nascimento, year(data_nascimento)
+from alunos
+where year(data_nascimento) >= 1970 and year (data_nascimento) <= 1999
+order by data_nascimento asc;
 
+-- Operadores relacionais
+--Maior >
+--Maior ou igual >=
+--menor
+--Menor ou igual <=
+-- diferente !=
+-- igual =
+
+-- Operadores logicos
+-- E  AND
+-- Ou OR
+
+-- COnsultar nome dos alunos em maiusculo
+select upper(nome) from alunos;
+
+-- Consultar nomes dos alunos em minusculo
+select lower(nome) from alunos;
+
+
+--Dever de casa:
+
+--Substring
+--Replace
+--Length
+--Concat
+--LTrim
+--RTrim
+--Trim
 
 
 
