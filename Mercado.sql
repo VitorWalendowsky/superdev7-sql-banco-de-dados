@@ -9,6 +9,9 @@ create table categorias (
 
 insert into categorias (nome) values ('Hortifruti'); -- id gerado 1
 insert into categorias (nome) values ('Embutidos'); -- id gerado 2
+insert into categorias (nome) values ('Carnes');
+insert into categorias (nome) values ('Doces');
+
 select * from categorias;
 
 -- PK -> Primary Key (chave primaria)
@@ -201,3 +204,9 @@ from endereco
 inner join bairro on endereco.id_bairro = bairro.id
 inner join cidade on bairro.id_cidade = cidade.id
 inner join estado on cidade.id_estado = estado.id;
+
+select * from produtos;
+
+select * from categorias;
+
+
